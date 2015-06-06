@@ -3,6 +3,8 @@ multiple-counter
 
 Count multiple items.
 
+![screenshot](screenshot.png)
+
 License
 -------
 
