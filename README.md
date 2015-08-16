@@ -14,4 +14,4 @@ MIT License
 Author
 ------
 
-wara <kusabashira227@gmail.com>
+kusabashira <kusabashira227@gmail.com>
