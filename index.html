@@ -8,8 +8,9 @@
     <div id='counter_app'></div>
     <script id='counter_template' type='text/ractive'>
       <h1>Multiple counter</h1>
-      <input type='text' value='{{new_title}}' />
-      <button on-click='addItem(new_title)'>Add</button>
+      <form on-submit="addItem(event)">
+        <input type='text' value='{{new_title}}' />
+      </form>
       <table>
         {{#each items:i}}
         <tr>
