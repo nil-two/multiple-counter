@@ -9,7 +9,7 @@
     <script id='counter_template' type='text/ractive'>
       <h1>Multiple counter</h1>
       <form on-submit="addItem(event)">
-        <input type='text' value='{{new_title}}' />
+        <input type='text' placeholder='new title' value='{{new_title}}' />
       </form>
       <table>
         {{#each items:i}}
