@@ -4,7 +4,7 @@ multiple-counter
 Count multiple items.
 App is [here](http://kusabashira.github.io/multiple-counter/).
 
-![screenshot](screenshot.png)
+![screenshot](https://raw.githubusercontent.com/kusabashira/ss/master/multiple-counter/app.png)
 
 License
 -------
