@@ -13,13 +13,15 @@
         <input type="submit" value="Add">
       </form>
       <table>
-        {{#each items:i}}
-        <tr>
-          <td><button on-click='countUp(i)'>+</button></td>
-          <td>{{title}}</td>
-          <td>{{count}}</td>
-        </tr>
-        {{/each}}
+        <tbody>
+          {{#each items:i}}
+          <tr>
+            <td><button on-click='countUp(i)'>+</button></td>
+            <td>{{title}}</td>
+            <td>{{count}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
       </table>
     </script>
     <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
