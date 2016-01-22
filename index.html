@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset='UTF-8'>
     <title>Multiple Counter</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div id='counter_app'></div>
     <script id='counter_template' type='text/ractive'>
-      <h1>Multiple Counter</h1>
-      <form on-submit="addItem(event)">
-        <input type='text' placeholder='new title' value='{{new_title}}' />
-        <input type="submit" value="Add">
+      <h1 class='top-title'>Multiple Counter</h1>
+      <form class='form' on-submit='addItem(event)'>
+        <input class='new-title' type='text' placeholder='new title' value='{{new_title}}' />
+        <input class='add' type='submit' value='Add'>
       </form>
-      <table>
-        {{#each items:i}}
-        <tr>
-          <td><button on-click='countUp(i)'>+</button></td>
-          <td>{{title}}</td>
-          <td>{{count}}</td>
-        </tr>
-        {{/each}}
+      <table class='items'>
+        <tbody>
+          {{#each items:i}}
+          <tr>
+            <td class='item'><button class='countup' on-click='countUp(i)'>+</button></td>
+            <td class='item'><span class='title'>{{title}}</span></td>
+            <td class='item'><input class='count' type='text' value='{{count}}'></td>
+          </tr>
+          {{/each}}
+        </tbody>
       </table>
     </script>
-    <script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
-    <script src='counter.js'></script>
+    <script src='js/ractive.min.js'></script>
+    <script src='js/counter.js'></script>
   </body>
 </html>
