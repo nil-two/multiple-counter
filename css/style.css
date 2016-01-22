@@ -10,3 +10,6 @@ html {
 .item:first-child {
   padding-left: 0px;
 }
+.count {
+  border-width: 0;
+}
