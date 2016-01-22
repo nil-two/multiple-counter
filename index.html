@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset='UTF-8'>
     <title>Multiple Counter</title>
   </head>
   <body>
     <div id='counter_app'></div>
     <script id='counter_template' type='text/ractive'>
       <h1>Multiple Counter</h1>
-      <form on-submit="addItem(event)">
+      <form on-submit='addItem(event)'>
         <input type='text' placeholder='new title' value='{{new_title}}' />
-        <input type="submit" value="Add">
+        <input type='submit' value='Add'>
       </form>
       <table>
         <tbody>
@@ -18,7 +18,7 @@
           <tr>
             <td><button on-click='countUp(i)'>+</button></td>
             <td>{{title}}</td>
-            <td><input type="text" value="{{count}}"></td>
+            <td><input type='text' value='{{count}}'></td>
           </tr>
           {{/each}}
         </tbody>
