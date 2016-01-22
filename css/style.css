@@ -4,3 +4,9 @@ html {
 .items {
   margin-top: 10px;
 }
+.item {
+  padding-left: 10px;
+}
+.item:first-child {
+  padding-left: 0px;
+}
