@@ -1,10 +1,14 @@
 html {
   font-size: 62.5%;
 }
+.top-title {
+  font-size: 2.4rem;
+}
 .items {
   margin-top: 10px;
 }
 .item {
+  font-size: 2.0rem;
   padding-left: 10px;
 }
 .item:first-child {
@@ -12,4 +16,5 @@ html {
 }
 .count {
   border-width: 0;
+  font-size: 2.0rem;
 }
