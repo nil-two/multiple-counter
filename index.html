@@ -17,7 +17,7 @@
         <tbody>
           {{#each items:i}}
           <tr>
-            <td class="item"><button class="countup" on-click="countUp(i)">+</button></td>
+            <td class="item"><input class="countup" type='button' value='+' on-click="countUp(i)" /></td>
             <td class="item"><span class="title">{{title}}</span></td>
             <td class="item"><input class="count" type="text" value="{{count}}"></td>
           </tr>
